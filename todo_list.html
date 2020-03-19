@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
- 	<h1>ToDo List</h1>
+ 	<h1>User Experiments - CSC2541</h1>
 
  	<form id='taskForm'>
  		<input id='tName' type="text" name="task" placeholder="Task">
@@ -16,38 +16,26 @@
  	<br>
 
  	<table>
- 		<tbody id='tasks'>
+ 		<tbody id='prompt-info'>
  		<tr>
  			<th>
- 				Task
+ 				Please infer the word masked by "-" in the sentence from the words in the drop down list.
  			</th>
- 			<th>
- 				Actions
- 			</th>
- 		
- 		</tr>
- 		<tr>
- 			<td>
- 				Buy Milk
-
- 			</td>
- 		
- 			<td>
- 				<button class='edit'>edit</button>
- 				<button class='remove'>done</button>
- 			</td>
- 		</tr>
- 		 <tr>
- 		 <td>
- 		 	Study
- 		 </td>
- 		 <td>
- 		 		<button class='edit'>edit</button>
- 				<button class='remove'>done</button>
- 			</td>
  		</tr>
  		</tbody>
- 	</table>
+	 </table>
+	 
+ 	<table>
+		<tbody id='tasks'>
+		<tr>
+			<th id='high-row'>
+				Task
+			</th>
+			<th>
+				Actions
+			</th>
+		</tbody>
+	</table>
 
  	<script type="text/javascript" src="todo.js"></script>
  </body>
