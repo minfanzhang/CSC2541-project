@@ -9,7 +9,8 @@
  <body>
 	<h1>User Experiments - CSC2541</h1>
 	<br>
-	<button id="new_mode">new mode</button> 
+	<button id="new_mode">new mode</button>
+	<button id="save_result">save result</button> 
  	<br>
 
  	<table id = 'prompt-info'>
@@ -26,7 +27,7 @@
 		<tbody>
 		<tr>
 			<th id='high-row'>
-				infectious disease: the patient was seen by the id service who thought that - could potentially have an atypical pneuminia
+				infectious disease: the patient was seen by the id service who thought that - could <span id="speculation-word">potentially</span> have an atypical pneuminia
 			</th>
 		</tbody>
 	</table>
@@ -72,6 +73,12 @@
 		<input type="range" min="0" max="100" value="50" class="slider" id="slider10">
 	</div>
 
- 	<script type="text/javascript" src="todo.js"></script>
+	<br>
+	<br>
+	<div>
+		<p>Result is <span id="results"></span></p>
+	</div>
+
+ 	<script type="text/javascript" src="user_study.js"></script>
  </body>
 </html>

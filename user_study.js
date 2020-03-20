@@ -4,13 +4,35 @@
 
 // Let's get the elements we need to add tasks
 const new_mode_button = document.querySelector('#new_mode');
+const save_button = document.querySelector('#save_result');
 
 new_mode_button.addEventListener('click', modifyMode);
 
 function modifyMode(e) {
 	var prompt_sentence = document.querySelector('#hidden-info');
 	prompt_sentence.innerHTML = " - Pay attention to the speculation words in red."
+
+	var speculation_word = document.querySelector('#speculation-word');
+	speculation_word.style.color = "red";
 }
+
+save_button.addEventListener('click', showResult);
+
+function showResult(e) {
+  var results = document.querySelector('#results');
+  results.innerHTML = top_ten_words[0] + ", " + output1.innerHTML + "\r" +
+                      top_ten_words[1] + ", " + output2.innerHTML + "\r" +
+                      top_ten_words[2] + ", " + output3.innerHTML + "\r" +
+                      top_ten_words[3] + ", " + output4.innerHTML + "\r" +
+                      top_ten_words[4] + ", " + output5.innerHTML + "\r" +
+                      top_ten_words[5] + ", " + output6.innerHTML + "\r" +
+                      top_ten_words[6] + ", " + output7.innerHTML + "\r" +
+                      top_ten_words[7] + ", " + output8.innerHTML + "\r" +
+                      top_ten_words[8] + ", " + output9.innerHTML + "\r" +
+                      top_ten_words[9] + ", " + output10.innerHTML;
+  
+}
+
 
 // Top ten words to infer
 let top_ten_words = ["she", "he", "patient", "it", "they", "this", "the", "there", "we", "He"];
