@@ -22,6 +22,17 @@ ul li {
 	list-style: none; /* Gets rid of list bullet points */
 }
 
+#prompt-info {
+	border-collapse: separate;
+	border: 1px solid black;
+	margin-bottom: 1cm;
+}
+#sentence-masked {
+	border-collapse: separate;
+	border: 1px solid black;
+	min-height: 450px;
+	min-width: 1400px;
+}
 
 table, td, th {
 	border-collapse: collapse;
@@ -36,3 +47,6 @@ td, th {
 	min-width: 400px;
 }
 
+p {
+    display: inline;
+}
