@@ -34,11 +34,14 @@ function showResult(e) {
 }
 
 
-// Top ten words to infer
-let top_ten_words = ["she", "he", "patient", "it", "they", "this", "the", "there", "we", "He"];
 
+
+// Top ten words to infer
+var top_ten_words = ["she", "he", "patient", "it", "they", "this", "the", "there", "we", "He"];
+
+let i;
 // Get the words
-for (var i = 1; i < 11; i++) {
+for (i = 1; i < 11; i++) {
 	document.getElementById("word" + i.toString()).innerHTML = top_ten_words[i - 1];
 }
 
@@ -131,3 +134,120 @@ output10.innerHTML = slider10.value;
 slider10.oninput = function() {
   output10.innerHTML = this.value;
 }
+
+// Auto-insert words
+const candidates = document.querySelectorAll(".candidate");
+/*
+for (i = 0; i < candidates.length; i++) {
+    candidates[i].onmouseover = function(){
+        document.getElementById("mask-word").innerHTML = i;
+        document.getElementById("mask-word").style.color = "purple";
+    }
+    candidates[i].onmouseout = function(){
+        document.getElementById("mask-word").innerHTML = "-";
+        document.getElementById("mask-word").style.color = "black";
+    }
+}
+*/
+candidates[0].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[0];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[0].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[1].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[1];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[1].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[2].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[2];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[2].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[3].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[3];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[3].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[4].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[4];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[4].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[5].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[5];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[5].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[6].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[6];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[6].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[7].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[7];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[7].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[8].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[8];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[8].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[9].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[9];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[9].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+candidates[10].onmouseover = function(){
+    document.getElementById("mask-word").innerHTML = top_ten_words[10];
+    document.getElementById("mask-word").style.color = "purple";
+};
+candidates[10].onmouseout = function(){
+    document.getElementById("mask-word").innerHTML = "-";
+    document.getElementById("mask-word").style.color = "black";
+};
+
+
+
+
