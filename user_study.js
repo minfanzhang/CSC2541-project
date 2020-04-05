@@ -249,3 +249,8 @@ candidates[10].onmouseout = function(){
 };
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> c563291b10df178673b32b4a99b6da87b36a15ed
