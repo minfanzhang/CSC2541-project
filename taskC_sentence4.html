@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	<meta charset="utf-8">
+    <title>User Experiments</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+ </head>
+ <body>
+	<h1>User Experiments - CSC2541</h1>
+	<br>
+	<button id="new_mode">new mode</button>
+	<button id="save_result">save result</button> 
+ 	<br>
+
+ 	<table id = 'prompt-info'>
+ 		<tbody>
+ 		<tr>
+ 			<th id = 'prompt-sentence'>
+ 				Please infer the word masked by "-" in the sentence from the words in the drop down list.<span id="hidden-info" style="color:red"></span>
+ 			</th>
+ 		</tr>
+ 		</tbody>
+	 </table>
+	 
+ 	<table id = 'sentence-masked'>
+		<tbody>
+		<tr>
+			<th id='high-row'>
+				Hematology was consulted and felt the <span id="speculation-word">caucasian</span> patient could potentially have been <span id="mask-word">-</span> causing severe sensitivity to coumadin.
+			</th>
+		</tbody>
+	</table>
+
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span class="candidate_word" id="word1"></span>" is <span id="prob1"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider1">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word2"></span>" is <span id="prob2"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider2">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word3"></span>" is <span id="prob3"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider3">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word4"></span>" is <span id="prob4"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider4">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word5"></span>" is <span id="prob5"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider5">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word6"></span>" is <span id="prob6"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider6">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word7"></span>" is <span id="prob7"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider7">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word8"></span>" is <span id="prob8"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider8">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word9"></span>" is <span id="prob9"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider9">
+	</div>
+	<div class="slidecontainer">
+		<p class="candidate">Probability of word "<span id="word10"></span>" is <span id="prob10"></span></p>
+		<input type="range" min="0" max="100" value="50" class="slider" step = "10" id="slider10">
+	</div>
+
+	<br>
+	<br>
+	<div>
+		<p>Result is <span id="results"></span></p>
+	</div>
+
+ 	<script type="text/javascript" src="sentence4.js"></script>
+ </body>
+</html>
